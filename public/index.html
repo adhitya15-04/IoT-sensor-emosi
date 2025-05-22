@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deteksi Emosi Wajah</title>
+    <style>
+        video, canvas {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 1px solid black;
+        }
+    </style>
+
+    <!-- Load FaceAPI (HARUS lebih dulu) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+    
+    <!-- Load Socket.IO -->
+    <script defer src="/socket.io/socket.io.js"></script>
+    <!-- Script Deteksi -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Deteksi Emosi Wajah (Senang, Sedih, Marah)</h1>
+    <video id="video" width="640" height="480" autoplay muted></video>
+    
+</body>
+</html>

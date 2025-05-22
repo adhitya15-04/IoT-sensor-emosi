@@ -1,0 +1,50 @@
+Buat folder proyek:
+
+bash
+Copy
+Edit
+mkdir iot-sensor-emosi
+cd iot-sensor-emosi
+
+Inisialisasi proyek Node.js:
+
+bash
+Copy
+Edit
+npm init -y
+
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install express mongoose socket.io
+npm install --save-dev nodemon
+
+Instalasi di folder proyek
+Setelah kamu buat folder proyek (misalnya iot-sensor-emosi), masuk ke folder tersebut dan jalankan:
+
+bash
+Copy
+Edit
+npm init -y
+Lalu install:
+
+bash
+Copy
+Edit
+npm install express mongoose socket.io
+npm install --save-dev nodemon
+
+Jalankan MongoDB (kalau belum aktif):
+
+bash
+Copy
+Edit
+mongod
+Jalankan server Node.js:
+
+bash
+Copy
+Edit
+npx nodemon server.js	
